@@ -16,39 +16,6 @@ a {
           color: #fff;
         }
       }
-      td.fc-day-today {
-        background: transparent !important;
-        position: relative;
-        a {
-          color: #fff !important;
-        }
-        &:before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          display: block;
-          background: #002a54;
-          position: absolute;
-          top: 1rem;
-          left: 50%;
-          transform: translate(-50%, 0);
-        }
-      }
-      td.fc-day-sat {
-        .fc-daygrid-day-top {
-          &::after {
-            content: "Event";
-            display: block;
-            background: #ffd24a;
-            margin: 2px 2px 0;
-            padding: 1px 0;
-            border-radius: 3px;
-            color: #fff;
-            font-size: 13.6px;
-          }
-        }
-      }
     }
   }
   //header
@@ -93,6 +60,39 @@ a {
     }
   }
   .calendar-daycell {
+    &.fc-day-sat {
+      .fc-daygrid-day-top {
+        &::after {
+          content: "Event";
+          display: block;
+          background: #ffd24a;
+          margin: 2px 2px 0;
+          padding: 1px 0;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 13.6px;
+        }
+      }
+    }
+    &.fc-day-today {
+      background: transparent !important;
+      position: relative;
+      a {
+        color: #fff !important;
+      }
+      &:before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        background: #002a54;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
     .fc-daygrid-day-top {
       margin-top: 1rem;
       flex-direction: column;
