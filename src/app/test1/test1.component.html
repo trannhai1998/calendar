@@ -1,0 +1,26 @@
+<div class="container wrapper">
+  <div class="mb-3 mt-3 d-flex align-items-center">
+    <h2>Project Stage</h2>
+    <ul class="d-flex flex-wrap flex-grow-1">
+      <li
+        *ngFor="let stage of stages; index as i"
+        (click)="changeState(i + 1)"
+        [ngClass]="
+          i + 1 < currentStage
+            ? 'past'
+            : i + 1 === currentStage
+            ? 'current'
+            : 'waiting'
+        "
+      >
+        <span
+          >
+          <i class="fas fa-check" *ngIf="i + 1 < currentStage"></i>
+          <i class="fas fa-play" *ngIf="i + 1 === currentStage"></i>
+          {{ currentStage < i + 1 ? i + 1 : ""}}
+        </span>
+        {{ stage }}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+h2 {
+  white-space: nowrap;
+  color: #62809d;
+}
+i.fas {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+ul {
+  margin: 0;
+  gap: 15px 20px;
+  li {
+    list-style-type: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 1;
+    span {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      left: -12px;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 14px;
+      border: 1px solid transparent;
+      z-index: 99;
+    }
+    &.past {
+      background: #002a54;
+      color: #7c9bba;
+      span {
+        background: #fff;
+        border-color: #62809d;
+      }
+    }
+    &.current {
+      color: #fff;
+      background: #2780d9;
+      border-color: #fff;
+      span {
+        background: rgb(249, 180, 52);
+      }
+    }
+    &.waiting {
+      color: #7c9bba;
+      border-color: #7c9bba;
+      span {
+        border-color: #7c9bba;
+        background: #fff;
+      }
+    }
+  }
+}

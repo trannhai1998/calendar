@@ -1,8 +1,12 @@
 
-<div class="container "><h1 class="text-center mt-4 text-uppercase">Test 2: Calendar</h1></div>
-<div class="container mt-3 d-flex justify-content-center">
-  <div class="calendar-wrapper mt-3 mb-3">
-    <full-calendar [options]="calendarOptions"></full-calendar>
-  </div>
 
+<div class="container">
+<nav>
+  <ul class="d-flex justify-content-center">
+    <li><a routerLink="/test-1" routerLinkActive="active">Test 1</a></li> 
+    <li><a routerLink="/test-2" routerLinkActive="active">Test 2</a></li>
+  </ul>
+</nav>
 </div>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
