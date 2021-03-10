@@ -1,17 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-nav {
-  ul {
-    padding: 20px 0;
-    li {
-      list-style-type: none;
-      margin: 0 10px;
-      a.active {
-        color: #2780d9;
-        color: #002a54;
-      }
-    }
-  }
-}
+
 a {
   color: initial;
   &:hover {
